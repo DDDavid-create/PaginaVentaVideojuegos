@@ -2,7 +2,7 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
-    color: rgb(245, 245, 245);
+    color: rgb(51, 2, 97);
 }
 
 body{
@@ -13,16 +13,18 @@ body{
 h1{
     text-align: center;
     margin: 30px 0px;
+    color: rgb(51, 2, 97);
 }
 
 img{
-    width: 320px;
+    width: 330px;
     height: 340px;
     object-fit: cover;
     border-radius: 20px 20px 0px 0px;
 }
 
 header {
+    background-color: rgb(201, 200, 200);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -61,13 +63,13 @@ header {
 }
 
 .contenedor>div{
-    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 75);
-    background-color: rgb(51, 2, 97);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 30);
     border-radius: 20px;
 }
 
 .contenedor>div:hover{
-    background-color: rgb(61, 0, 160);
+    translate: 0px -15px;
+    box-shadow: 0px 0px 10px 0px;
 }
 
 .Informacion{
@@ -80,12 +82,12 @@ header {
 }
 
 .Informacion>p{
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 300;
 }
 
 .Informacion button{
-    background-color: rgb(17, 17, 17);
+    color: black;
     width: 100px;
     height: 35px;
     border-radius: 10px;
@@ -96,6 +98,6 @@ header {
 }
 
 .Informacion button:hover{
-    background-color: rgb(80, 70, 70);
+    box-shadow: 0px 0px 5px 0px rgb(51, 2, 97);
 }
 
