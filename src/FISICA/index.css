@@ -1,11 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
-    color: rgb(51, 2, 97);
+    color: #181726;
+}
+
+ul {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 40px;
+}
+
+li {
+    display: grid;
+    justify-content: center;
+    align-items: center;
 }
 
 body{
+    font-family: 'Poppins', sans-serif;
     background-color: whitesmoke;
     padding-top: 80px;
 }
@@ -13,18 +28,18 @@ body{
 h1{
     text-align: center;
     margin: 30px 0px;
-    color: rgb(51, 2, 97);
+    color: rgb(223, 223, 224);
 }
 
 img{
     width: 330px;
-    height: 340px;
+    height: 330px;
     object-fit: cover;
     border-radius: 20px 20px 0px 0px;
 }
 
 header {
-    background-color: rgb(201, 200, 200);
+    background-color: #181726;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -45,12 +60,11 @@ header {
 }
 
 .scroll h1{
-    color: black;
+    color: rgb(2, 2, 2);
 }
 
 .mando{
-    filter: invert(100%);
-    width: 60px;
+    width: 50px;
     height: auto;
 }
 
@@ -68,7 +82,7 @@ header {
 }
 
 .contenedor>div:hover{
-    box-shadow: 0px 0px 10px 0px;
+    box-shadow: 0px 0px 20px 0px #24214b;
 }
 
 .Informacion{
@@ -96,6 +110,6 @@ header {
 }
 
 .Informacion button:hover{
-    box-shadow: 0px 0px 5px 0px rgb(51, 2, 97);
+    box-shadow: 0px 0px 8px 0px #24214b;
 }
 
