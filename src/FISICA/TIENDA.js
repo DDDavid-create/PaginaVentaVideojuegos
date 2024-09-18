@@ -34,19 +34,37 @@ function addItemToCart(game) {
     updateCart();
 }
 
+// Function to remove an item from the cart
+function removeItemFromCart(game) {
+    if (cart[game] > 1) {
+        cart[game]--;
+    } else {
+        delete cart[game];
+    }
+    updateCart();
+}
+
+// Function to update the cart display
 // Function to update the cart display
 function updateCart() {
     cartList.innerHTML = '';
     let total = 0;
     for (const game in cart) {
         const gameElement = document.createElement('li');
-        gameElement.textContent = `${game} x ${cart[game]}`;
+        gameElement.textContent = `${game} x ${cart[game]} `;
+        const addButton = document.createElement('button');
+        addButton.textContent = '+';
+        addButton.onclick = () => addItemToCart(game);
+        const removeButton = document.createElement('button');
+        removeButton.textContent = '-';
+        removeButton.onclick = () => removeItemFromCart(game);
+        gameElement.appendChild(addButton);
+        gameElement.appendChild(removeButton);
         cartList.appendChild(gameElement);
-        total += cart[game] * 120; 
+        total += cart[game] * 90; 
     }
     cartTotal.textContent = `Total: $${total.toFixed(3)}`;
 }
-
 // Add event listeners to the "Agregar al carrito" buttons
 const gameButtons = document.querySelectorAll('.Informacion button');
 gameButtons.forEach((button) => {
