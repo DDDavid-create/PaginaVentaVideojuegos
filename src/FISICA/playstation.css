@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    color: whitesmoke;
+}
+
+.nav-bar {
+    padding: 1em;
+    text-align: center; 
+}
+
+.nav-bar ul {
+    list-style: none; 
+    margin: 0;  
+    padding: 0; 
+    display: flex; 
+    justify-content: space-between; 
+}
+
+.nav{
+    color: #fff; 
+    text-decoration: none; 
+    transition: color 0.2s ease; 
+}
+
+.nav:hover {
+    color: rgb(22, 22, 255);
+}
+
+.nav-bar li {
+    margin-right: 40px;
+}
+
+body{
+    background-color: rgb(0, 5, 82);
+    padding-top: 80px;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1{
+    text-align: center;
+    margin: 30px 0px;
+    color: whitesmoke;
+}
+
+h2{
+    text-align: center;
+    margin: 30px 0px;
+    color: whitesmoke;
+}
+
+img{
+    width: 330px;
+    height: 340px;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+
+header {
+    background-color: rgb(31, 31, 31);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15%;
+    height: 70px;
+    top: 0;
+    position: fixed;
+    width: 100%;
+}
+
+li{
+    color: #fff;
+}
+
+.playstation-imagen{
+    filter: invert(100%);
+    width: 100px;
+    height: auto;
+}
+
+.cart-container{
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(31, 31, 31);
+    text-align: center;
+    display:inline-block;
+    border-radius: 10px;
+    margin-top: auto;
+    margin-bottom: 30px;
+    width: 300px;
+    height: auto;
+}
+.cart-container>p{
+    color: rgb(182, 182, 255);
+}
+
+.cart-container button{
+
+    box-shadow: 0px 0px 10px 0px black;
+    background-color: rgb(31, 31, 31);
+    text-align: center;
+    width: 50px;
+    height: 30px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.cart-container button:hover{
+    box-shadow: 0px 0px 8px 0px blue;
+}
+
+.contenedor{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-bottom: 20px;
+}
+
+.contenedor>div{
+    box-shadow: 0px 0px 5px 0px whitesmoke;
+    border-radius: 20px;
+}
+
+.contenedor>div:hover{
+    box-shadow: 0px 0px 18px 0px whitesmoke;
+}
+
+.Informacion{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.Informacion>p{
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.Informacion button{
+    background-color: rgb(0, 5, 82);
+    color: aliceblue;
+    box-shadow: 0 0 5px 0 rebeccapurple;
+    width: 100px;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+    font-size:  16px;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.Informacion button:hover{
+    box-shadow: 0px 0px 10px 0px whitesmoke;
+}
